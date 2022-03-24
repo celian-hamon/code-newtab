@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+:root {
+    --bg: #0a0404;
+    --fg: #711a75;
+    --fg-light: #f100a9;
+    --accent: #f582a7;
+}
+
+* {
+    transition: all 0.5s;
+}
+
+body {
+    overflow: hidden;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    height: 100vh;
+    font-family: "Fira Code";
+}
+h1 {
+    font-size: 2rem;
+}
+
+.group {
+    color: var(--fg-light);
+    margin: 300px 20px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+a {
+    color: var(--fg-light);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.row::before {
+    content: "./";
+}
+.sub::before {
+    content: "  └─";
+}
+
+body > *:last-child > a:last-child::after {
+    content: "_";
+    animation: blink 0.5s alternate-reverse infinite;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+#setup {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    background-color: var(--bg);
+    width: 210px;
+    height: 100px;
+}

@@ -1,0 +1,61 @@
+{
+    "data": [
+        {
+            "name": "Socials",
+            "color": "var(--fg-light)",
+            "linkColor": "var(--fg-light)",
+            "links": [
+                {
+                    "name": "twitter",
+                    "url": "https://twitter.com/",
+                    "sub": false
+                },
+                {
+                    "name": "youtube",
+                    "url": "https://www.youtube.com/",
+                    "sub": false
+                },
+                {
+                    "name": "youtube/eltriceratops",
+                    "url": "https://www.youtube.com/channel/UChHXImD8l3HxYWxLbLQP8rQ",
+                    "sub": true
+                }
+            ]
+        },
+        {
+            "name": "Code",
+            "color": "var(--fg-light)",
+            "linkColor": "var(--fg-light)",
+            "links": [
+                {
+                    "name": "github",
+                    "url": "https://github.com/",
+                    "sub": false
+                }
+            ]
+        },
+        {
+            "name": "Misc",
+            "color": "var(--fg-light)",
+            "linkColor": "var(--fg-light)",
+            "links": [
+                {
+                    "name": "opgg",
+                    "url": "https://euw.op.gg/",
+                    "sub": false
+                },
+                {
+                    "name": "opgg/lol/cece3007",
+                    "url": "https://euw.op.gg/summoners/euw/cece3007",
+                    "sub": true
+                },
+                {
+                    "name": "opgg/valorant/cece3007",
+                    "url": "https://valorant.op.gg/profile/name=elchatbaguette&tagLine=zob",
+                    "sub": true
+                }
+            ]
+        }
+    ],
+    "backgroundColor": "var(--bg)"
+}

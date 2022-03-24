@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+:root {
+    --primary: #f300df;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --background: rgb(15, 15, 15);
+    --background-surface: rgb(27, 27, 27);
+    --button: #0070f3;
+    --icons: #000000;
+}
+* {
+    animation: spawn 0.5s;
+    transition: all 0.3s;
+}
+body {
+    background-color: var(--background);
+    color: var(--primary);
+    font-family: "Fira Code";
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input {
+    font-family: Fira Code;
+    height: 20px;
+    font-size: 1.5em;
+    margin: 10px;
+    width: 250px;
+    color: var(--primary);
+    background-color: var(--background);
+    border: none;
+}
+input:focus {
+    outline: none;
+    border: none;
+    border-bottom: var(--primary) solid 3px;
+}
+#setup-form {
+    background-color: var(--background-surface);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+.link > input {
+    margin-left: 0;
+    width: 220px;
+}
+.link::before {
+    font: none;
+    margin-left: 40px;
+    content: " └─";
+}
+
+button {
+    font-family: "Material Icons";
+    background-color: var(--primary);
+    color: var(--icons);
+    border: none;
+    font-size: 1.5em;
+    border-radius: 2px;
+    margin: 10px;
+    padding: 2px 5px 2px 5px;
+}
+@keyframes spawn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
